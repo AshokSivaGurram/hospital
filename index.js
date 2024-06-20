@@ -135,7 +135,7 @@ onValue(patientsListInDB, function(snapshot) {
     
         clearPatientListEl()
         
-        for (let i = 0; i < itemsArray.length; i++) {
+        for (let i = (itemsArray.length-1); i >=0 ; i--) {
             let currentPatient = itemsArray[i]
             
             if (currentPatient[1]["date"]===todayDate){
@@ -156,7 +156,7 @@ gotodatesubmit.addEventListener("click", function(){
         
             clearPatientListEl()
             
-            for (let i = 0; i < itemsArray.length; i++) {
+            for (let i = (itemsArray.length-1); i >= 0 ; i--) {
                 let currentPatient = itemsArray[i]
                 
                 if (currentPatient[1]["date"]===todayDate){
